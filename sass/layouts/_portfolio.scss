@@ -1,0 +1,47 @@
+.portfolio {
+  padding-top: 94px;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.portfolio__btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+  background-color: var(--primary-bg-color);
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: background-color 250ms var(--transition-timing-fun),
+    color 250ms var(--transition-timing-fun),
+    box-shadow 250ms var(--transition-timing-fun);
+  &:hover,
+  &:focus {
+    background-color: var(--active-bg-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.active__btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  background-color: var(--active-bg-color);
+  color: var(--secondary-color);
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+}

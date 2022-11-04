@@ -1,0 +1,29 @@
+:root {
+  --main-color: #212121;
+  --main-background-color: #ffffff;
+  --typical-lh: 1.14;
+  --primary-bg-color: #f5f4fa;
+  --active-bg-color: #2196f3;
+  --active-link-color: #2196f3;
+  --header-text-color: #000000;
+  --pale-color: #757575;
+  --hero-bg-color: #2f303a;
+  --secondary-color: #ffffff;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --border-project-color: #eeeeee;
+  --inactive-btn-color: #f5f4fa;
+  --transition-timing-fun: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

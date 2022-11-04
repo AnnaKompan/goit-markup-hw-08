@@ -1,0 +1,17 @@
+body {
+  background-color: var(--main-background-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  transition: color 250ms var(--transition-timing-fun);
+  &:hover,
+  &:focus {
+    color: var(--active-link-color);
+  }
+}
