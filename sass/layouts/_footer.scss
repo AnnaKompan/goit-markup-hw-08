@@ -2,11 +2,35 @@ footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
 }
 
 .container__footer {
-  display: flex;
   align-items: baseline;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer__address {
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo,
@@ -23,6 +47,9 @@ footer {
   display: flex;
   font-style: normal;
   margin-top: 20px;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
 }
 
 .address__map {
@@ -46,7 +73,16 @@ footer {
 .footer__contact {
   align-items: baseline;
   justify-content: center;
-  margin-left: 70px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer__header {
@@ -56,12 +92,18 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-color);
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
 
 .footer-soc-list {
   display: flex;
   margin-top: 20px;
   gap: 10px;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
 }
 
 .footer-soc-list__link {
@@ -90,7 +132,13 @@ footer {
 }
 
 .subscribe {
-  margin-left: 93px;
+  max-width: 480px;
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .subscribe__header {
@@ -100,17 +148,33 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .subscribe__label {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .subscribe__input {
-  width: 358px;
   height: 50px;
+  width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   outline: transparent;
   background-color: transparent;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .subscribe__input:focus {
@@ -118,7 +182,16 @@ footer {
 }
 
 .subscribe__form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.subscribe__btn {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .subscribe__button {
@@ -133,10 +206,20 @@ footer {
   background-color: var(--active-bg-color);
   min-width: 200px;
   min-height: 50px;
-  margin-left: 12px;
   padding-left: 28px;
   align-items: center;
   display: flex;
+  @media screen and (min-width: 480px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .subscribe__icon {

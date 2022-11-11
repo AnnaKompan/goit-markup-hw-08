@@ -12,7 +12,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
   min-height: 581px;
   background-color: var(--main-background-color);
   transform: translate(-50%, -50%) scale(1);
@@ -118,12 +124,18 @@
 }
 
 .check-text {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 
   span {
     width: 16px;
@@ -155,7 +167,13 @@
 
 .policy {
   margin-left: 5px;
-  font-size: 14px;
+  font-size: 12px;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
   letter-spacing: 0.03em;
   color: var(--active-link-color);
   text-underline-offset: 3px;
