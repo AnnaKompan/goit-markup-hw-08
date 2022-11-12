@@ -737,12 +737,13 @@ body {
   line-height: var(--typical-lh);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--main-color);
   margin-bottom: 10px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .about__title {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -871,12 +872,20 @@ body {
 
 .team__header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  text-align: center;
   color: var(--main-color);
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .team-list__item {
@@ -977,20 +986,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-align: center;
-  margin-bottom: 50px;
-}
-@media screen and (min-width: 768px) {
-  .clients__header {
-    font-size: 28px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__header {
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
 }
 
@@ -1002,6 +1004,8 @@ body {
 
 .clients-list__item {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .clients-list__item {
@@ -1177,12 +1181,8 @@ footer {
 
 .container__footer {
   align-items: baseline;
-}
-@media screen and (min-width: 480px) {
-  .container__footer {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .container__footer {
@@ -1195,16 +1195,19 @@ footer {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer__address {
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 60px;
-  }
+.footer__address {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__address {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    text-align: left;
   }
 }
 
@@ -1222,11 +1225,7 @@ footer {
   display: flex;
   font-style: normal;
   margin-top: 20px;
-}
-@media screen and (min-width: 480px) {
-  .address {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .address__map {
@@ -1250,11 +1249,7 @@ footer {
 .footer__contact {
   align-items: baseline;
   justify-content: center;
-}
-@media screen and (min-width: 480px) {
-  .footer__contact {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__contact {
@@ -1275,10 +1270,11 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-color);
+  text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .footer__header {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -1286,11 +1282,7 @@ footer {
   display: flex;
   margin-top: 20px;
   gap: 10px;
-}
-@media screen and (min-width: 480px) {
-  .footer-soc-list {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .footer-soc-list__link {
@@ -1318,11 +1310,7 @@ footer {
 
 .subscribe {
   max-width: 480px;
-}
-@media screen and (min-width: 480px) {
-  .subscribe {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
@@ -1344,12 +1332,11 @@ footer {
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
-  .subscribe__label {
-    display: flex;
-    justify-content: center;
-  }
+.subscribe__label {
+  display: flex;
+  justify-content: center;
 }
+
 .subscribe__input {
   height: 50px;
   width: 450px;
@@ -1401,13 +1388,10 @@ footer {
   min-width: 200px;
   min-height: 50px;
   padding-left: 28px;
+  padding-right: 28px;
   align-items: center;
   display: flex;
-}
-@media screen and (min-width: 480px) {
-  .subscribe__button {
-    margin-top: 20px;
-  }
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .subscribe__button {
@@ -1422,6 +1406,8 @@ footer {
 }
 
 .subscribe__icon {
+  width: 24px;
+  height: 24px;
   align-self: center;
   margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
