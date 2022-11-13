@@ -323,9 +323,21 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .navigation__logo,
@@ -333,19 +345,25 @@ body {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
+  font-size: 24px;
+  line-height: 1.16;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .navigation__logo,
 .navigation__logo:visited {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
     margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__logo,
+.navigation__logo:visited {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
   }
 }
 
@@ -1192,6 +1210,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .container__footer {
     display: flex;
+    justify-content: left;
   }
 }
 
@@ -1208,6 +1227,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer__address {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -1229,8 +1249,10 @@ footer {
 }
 
 .address__map {
+  width: 231px;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -1249,7 +1271,7 @@ footer {
 .footer__contact {
   align-items: baseline;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .footer__contact {
@@ -1260,6 +1282,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer__contact {
     margin-left: 70px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1310,7 +1333,7 @@ footer {
 
 .subscribe {
   max-width: 480px;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
